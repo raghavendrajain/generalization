@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf8"?>
+<world name="myworld1">
+<gravity x="0.0" y="-9.8" z="0.0"/> 
+
+
+<!-- <instanciate class="L_nakli.xml">   -->
+<!-- <instanciate class="L_Shape.xml"> -->
+<!-- <instanciate class="T_Shape.xml"> -->
+<!-- <instanciate class="robot_test.xml"> -->
+<instanciate class="ArrowStick.xml">  
+<!-- <instanciate class="YStick.xml"> -->
+<!-- <instanciate class="LHook.xml"> -->
+<!-- <instanciate class="Hammer.xml"> -->
+<!-- <instanciate class="GrabTool.xml"> -->
+<!-- <instanciate class="THook.xml"> -->
+
+    <set-attr-value name="name" value="robot_test"/>
+
+    <set-attr-value name="dynamics" value="true"/>
+    <set-attr-value name="language" value="c++"/>  
+    <set-attr-value name="implementation"  
+                    value="./LToolController.so"/> 
+
+    <set-attr-value name="x" value="20.0"/>
+    <set-attr-value name="y" value="1.0"/>
+    <set-attr-value name="z" value="10.0"/>
+
+    <!-- To place target inside the square of graber tool. -->
+  <!--   <set-attr-value name="x" value="0.0"/>
+    <set-attr-value name="y" value="1.0"/>
+    <set-attr-value name="z" value="-87.0"/> -->
+
+<!--     <set-attr-value name="qw" value="-0.407"/>
+    <set-attr-value name="qx" value="0.0"/>
+    <set-attr-value name="qy" value="0.707"/>
+    <set-attr-value name="qz" value="0.0"/> -->
+
+    <set-attr-value name="collision" value="true"/>
+
+  </instanciate>
+
+
+
+<!-- <instanciate class="robot_test.xml">  
+
+    <set-attr-value name="name" value="robot_test"/>  
+    <set-attr-value name="language" value="c++"/>  
+    <set-attr-value name="implementation"  
+                    value="./LToolController.so"/>  
+  
+    <set-attr-value name="dynamics" value="true"/>  
+
+    <set-attr-value name="mass" value="4.5"/>  
+    <set-attr-value name="collision" value="true"/>  
+
+
+    <set-attr-value name="x" value="0.0"/>
+    <set-attr-value name="y" value="1.0"/>
+    <set-attr-value name="z" value="-4.0"/>
+
+</instanciate>
+ -->
+
+
+
+
+
+ <!-- <instanciate class="seBox.xml"> -->
+
+<instanciate class="robot_box.xml">
+
+   <set-attr-value name="name" value="box_001"/>  
+   <set-attr-value name="mass" value="0.5"/>  
+   <set-attr-value name="language" value="c++"/>  
+  
+   <set-attr-value name="dynamics" value="true"/>
+   <set-attr-value name="collision" value="true"/>
+   <set-attr-value name="x" value="0.0"/>
+   <set-attr-value name="y" value="1.0"/>
+   <set-attr-value name="z" value="-13.0"/>
+
+</instanciate>
+
+
+<instanciate class="CheckPoint.xml">
+    <set-attr-value name="name" value="checkpoint_001"/>
+    <set-attr-value name="language" value="c++"/>
+    <set-attr-value name="dynamics" value="false"/>
+    <set-attr-value name="x" value="0"/>
+    <set-attr-value name="y" value="1.0"/>
+    <set-attr-value name="z" value="20"/>
+    <set-attr-value name="collision" value="false"/>
+  </instanciate>
+
+
+
+
+<!-- <instanciate class="ArrowStick.xml">
+    <set-attr-value name="name" value="ArrowStick"/>
+
+    <set-attr-value name="dynamics" value="true"/>
+
+   <set-attr-value name="x" value="0.0"/>
+    <set-attr-value name="y" value="1.0"/>
+    <set-attr-value name="z" value="-10.0"/>
+
+
+    <set-attr-value name="qw" value="0.707"/>
+    <set-attr-value name="qx" value="0.707"/>
+    <set-attr-value name="qy" value="0.0"/>
+    <set-attr-value name="qz" value="0.0"/>
+
+
+    <set-attr-value name="collision" value="true"/>
+
+  </instanciate> -->
+
+
+
+
+
+
+ <!-- The originallly defined parameters were -->
+
+ <!-- <worldParam erp="0.5" cfm="1e-8" autostep="true" quickstep="false" stepsize="0.01"/>  
+  <collisionParam mu="0.9" mu2="0.02" slip1="0.01" slip2="0.01"  
+                  soft_erp="0.8" soft_cfm="0.00001" bounce="0.3" bounce_vel="5.0"/>  -->
+
+ <!-- The modified parameters are -->
+
+ <worldParam erp="0.5" cfm="1e-8" autostep="true" quickstep="false" stepsize="0.01"/>  
+  <collisionParam mu="0.3" mu2="0.02" slip1="0.01" slip2="0.01"  
+                  soft_erp="0.8" soft_cfm="0.00001" bounce="0.000" bounce_vel="0.000"/> 
+
+
+
+</world>
+
+
+
+
+
+
+
+
